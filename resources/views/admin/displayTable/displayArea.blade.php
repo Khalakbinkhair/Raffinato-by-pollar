@@ -16,9 +16,7 @@
                 <table id="example2" class="table table-bordered table-hover text-center">
                   <thead>
                     <tr>
-                      <th>District Name</th>
-                      <th>Market Name</th>
-                      <th>Shop_Name</th>
+                      <th>Area</th>
                       <th>Action</th>
                     </tr>
                   </thead>
@@ -27,15 +25,7 @@
                 <tr>
                   <td class="width-fix-title">
                     <p style="text-align: center;">
-                    {{$info->district_name}}
-                  </td>
-                  <td class="width-fix-title">
-                    <p style="text-align: center;">
-                    {{$info->market_name}}
-                  </td>
-                  <td class="width-fix-title">
-                    <p style="text-align: center;">
-                    {{$info->shop_name}}
+                    {{$info->area}}
                   </td>
                     <td>
                       <form method="POST" action="{{ route('delete_area',$info['id'])}}">
@@ -47,10 +37,8 @@
                 </tr>
                 @endforeach
                 <tr>
-                      <th>District Name</th>
-                      <th>Market Name</th>
-                      <th>Shop_Name</th>
-                      <th>Action</th>
+                  <th>Area</th>
+                  <th>Action</th>
                 </tr>
                 </tbody>
               </table>

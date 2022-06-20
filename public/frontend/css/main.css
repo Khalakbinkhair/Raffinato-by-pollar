@@ -13,35 +13,35 @@
 }
 .check-box label{
   padding-left: 1.5rem;
-  color: #B32744;
+  color: #fff;
   font-size: 1.2rem;
 }
 .check-box fieldset{
   padding-top: 10px !important;
 }
 .alert-success-polar{
-    background: linear-gradient(to right,#fff,#fff,#fff) !important;
+    background: linear-gradient(to right,#85682f,#b2994b,#85682f) !important;
 }
 .btn-primary{
   background-color: transparent !important;
-  border-color:  #fff !important; 
+  border-color: #000 !important; 
 }
-  .submit-Btn,.main-header .navbar-nav .nav-item{
-    background: linear-gradient(to right,#B32744,#B32744,#B32744) !important;
-    border: #000;
+  .submit-Btn, .card, .main-header .navbar-nav .nav-item{
+    background: linear-gradient(to right,#85682f,#b2994b,#85682f) !important;
+    border: #fff;
   }
   .show .dropdown-menu, .show .dropdown-menu a:hover{
-    background: linear-gradient(to right,#B32744,#B32744,#B32744) !important;
+    background: linear-gradient(to right,#85682f,#b2994b,#85682f) !important;
   }
   .content-wrapper {
-     background: #fff !important; 
+     background: #ccc !important; 
   }
 /*  input{
     border: none !important;
     background: none !important;
   }*/
   .field{
-    background: linear-gradient(to right,#FFFFFF,#FFFFFF,#FFFFFF) !important;
+    background: linear-gradient(to right,#85682f,#b2994b,#85682f) !important;
     /*background: #191316;*/
     /* box-shadow: inset -8px -8px 8px #f7f7fa, inset 8px 8px 8px #e3ebec; */
     border-radius: .5rem;
@@ -56,7 +56,7 @@
     border: 1px solid #000 !important;
 }
 .table thead th {
-    border-bottom: 2px solid #fff !important;
+    border-bottom: 2px solid #000 !important;
 }
 .table-bordered td, .table-bordered th {
     border: 1px solid #000 !important;
@@ -85,52 +85,46 @@ input[type="color"]:focus,
 }
 
 legend{
-  color: #000;
+  color: #fff;
 }
 h2{
   color: #fff;
   font-weight: 700;
 }
 select{
-      background: #fff !important;
+      background: #F5F5F5 !important;
 }
-.btn-danger , .page-item.active{
+.btn-danger , .page-item.active .page-link{
   background-color: transparent;
-  border-color: #fff; 
-}
-.page-link{
-  border-color: #B32744; 
+  border-color: #000; 
 }
 /*.page-item.active .page-link{
   background-color: transparent;
 }*/
 .sidebar{
 	padding-top: 1rem !important;
-	background: #B32744;
+	background: #000;
 }
 /*.card-primary:not(.card-outline) .card-header {
     background-color: #E3EBEC !important;
     border-bottom: 0;
 }*/
-/* Important*/
-
 .content-wrapper{
-	background: #fff !important;
+	background: #000 !important;
   padding-top: 3rem;
 }
-/* Important*/
 .sidebar-dark-primary .nav-sidebar>.nav-item>.nav-link.active{
-	color: #fff;
+	color: #000;
 }
 .nav-sidebar .nav-item>.nav-link{
-  background: linear-gradient(to right,#B32744,#B32744,#B32744) !important;
-	color: #B32744;
+  background: linear-gradient(to right,#85682f,#b2994b,#85682f) !important;
+	color: #000;
 }
 .main-sidebar .brand-text, .sidebar .nav-link p, .sidebar .user-panel .info{
-	color: #fff;
+	color: #000;
 }
 .fa-book:before , .fa-table:before, .fa-pie-chart:before, .fa-circle-o:before{
-	color: #fff;
+	color: #000;
 }
 .fatmonk-image{
 	padding-top: 0.2rem;
@@ -138,25 +132,18 @@ select{
 
 }
 .sidebar-dark-primary .nav-sidebar>.nav-item>.nav-link.active{
-	background: #B32744;
+	background: #E3EBEC;
 }
 .main-header, .main-footer{
-	background: #B32744 !important;
+	background: #000 !important;
 }
 .logo2{
 	width: 8rem;
 }
 .sidebar-dark-primary{
-	background:#B32744 !important;
+	background: #000 !important;
 }
-.fa-edit:before{
-  color: #000;
-
-}
-
-
-
-.fa-trash-o, .fa-pencil-square-o:before{
+.fa-edit:before, .fa-pencil-square-o:before{
 	color: #000;
 }
 
@@ -168,11 +155,32 @@ select{
 
 }
 
-.card{
-border: 1px solid #FFFFFF;
-box-shadow: 8px 19px 42px 11px rgba(0, 0, 0, 0.25);
-backdrop-filter: blur(41px);
-/* Note: backdrop-filter has minimal browser support */
 
-border-radius: 35px;
-}
+  /* Styling h1 and links
+  ––––––––––––––––––––––––––––––––– */
+  
+  
+  .mocha_click > input, .vanilla_click  > input, .mint_click > input 
+   {display: none;}  /* Remove radio buttons */
+  
+  .mocha_click > label:before, .vanilla_click  > label:before, .mint_click > label:before  { 
+    content: "\f005"; /* Star */
+    margin: -5px;
+    font-size: 10px;
+    font-family: FontAwesome;
+    /* display: inline-block;  */
+  }
+  
+  .mocha_click > label,.vanilla_click > label, .mint_click > label
+  {
+    color: #222222; /* Start color when not clicked */
+  }
+  
+  .mocha_click > input:checked ~ label,.vanilla_click  > input:checked ~ label,.mint_click > input:checked ~ label
+  { color: #ffca08 ; } /* Set yellow color when star checked */
+  
+  .mocha_click > input:hover ~ label,.vanilla_click  > input:hover ~ label, .mint_click > input:hover ~ label
+  { color: #ffca08 ;  } /* Set yellow color when star hover */
+  
+  
+  

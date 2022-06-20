@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-              <h1>  Admin</h1>
+              <h1>Admin</h1>
                 <div class="card-header"> Admin{{ __('Dashboard') }}</div>
 
                 <div class="card-body">

@@ -17,13 +17,19 @@
           <table id="example2" class="table table-bordered table-hover  text-center">
             <thead>
               <tr>
-                <th>District Name</th>
-                <th>Market Name</th>
-                <th>Shop_Name</th>
-                <th>Customer Name</th>
-                <th>Contact No.</th>
-                <th>Product sku</th>
-                <th>Total Consume Amount</th>
+                <th>Name</th>
+                <th>Club Name</th>
+                <th>Member ID</th>
+                <th>Gender</th>
+                <th>Area</th>
+                <th>Phone</th>
+                <th>Email</th>
+                <th>Mocha</th>
+                <th>Mocha Rating</th>
+                <th>Natural Vanilla</th>
+                <th>Natural Vanilla Rating</th>
+                <th>Mint Chocolate</th>
+                <th>Mint Chocolate Rating</th>
                 <th>Action</th>
               </tr>
             </thead>
@@ -32,35 +38,58 @@
               <tr>
                 <td class="width-fix-title">
                   <p style="text-align: center;">
-                  {{$info->district_name}}
+                  {{$info->name}}
                 </td>
                 <td class="width-fix-title">
                   <p style="text-align: center;">
-                  {{$info->market_name}}
+                  {{$info->club_name}}
                 </td>
                 <td class="width-fix-title">
                   <p style="text-align: center;">
-                  {{$info->shop_name}}
+                  {{$info->member_id}}
                 </td>
                 <td>
                   <p style="text-align: center;">
-                  {{$info->customer_name}}
+                  {{$info->gender}}
                   </p>
                 </td>
                 <td class="width-fix-title">
+                  <p style="text-align: center;">
+                  {{$info->area}}
+                </td>
+                <td>
                   <p style="text-align: center;">
                   {{$info->phone}}
-                </td>
-                <td>
-                  <p style="text-align: center;">
-                  {{$info->product_sku}}
                   </p>
                 </td>
                 <td class="width-fix-title">
                   <p style="text-align: center;">
-                  {{$info->total_consume_amount}}
+                  {{$info->email}}
                 </td>
-             
+                <td class="width-fix-title">
+                  <p style="text-align: center;">
+                  {{$info->mocha}}
+                </td>
+                <td class="width-fix-title">
+                  <p style="text-align: center;">
+                  {{$info->mocha_rating}}
+                </td>
+                <td class="width-fix-title">
+                  <p style="text-align: center;">
+                  {{$info->natural_vanilla}}
+                </td>
+                <td class="width-fix-title">
+                  <p style="text-align: center;">
+                  {{$info->vanilla_rating}}
+                </td>
+                <td class="width-fix-title">
+                  <p style="text-align: center;">
+                  {{$info->mint_chocolate}}
+                </td>
+                <td class="width-fix-title">
+                  <p style="text-align: center;">
+                  {{$info->mint_rating}}
+                </td>
                 <td>
                   <div class="row">
                     <div class="col-md-6">
@@ -82,13 +111,19 @@
             </tbody>
             <tfoot>
               <tr>
-                <th> District Name</th>
-                <th>Market Name</th>
-                <th>Shop_Name</th>
-                <th>Customer Name</th>
-                <th>Contact No.</th>
-                <th>Product sku</th>
-                <th>Total Consume Amount</th>
+                <th>Name</th>
+                <th>Club Name</th>
+                <th>Member ID</th>
+                <th>Gender</th>
+                <th>Area</th>
+                <th>Phone</th>
+                <th>Email</th>
+                <th>Mocha</th>
+                <th>Mocha Rating</th>
+                <th>Natural Vanilla</th>
+                <th>Natural Vanilla Rating</th>
+                <th>Mint Chocolate</th>
+                <th>Mint Chocolate Rating</th>
                 <th>Action</th>
               </tr>
             </tfoot>

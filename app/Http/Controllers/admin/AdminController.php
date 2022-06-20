@@ -38,15 +38,20 @@ class AdminController extends Controller
       // dd($request->toArray());
       $memberinfo = new MemberInfo(); 
       
-      $memberinfo->district_name = $request->input('district_name');
-      $memberinfo->market_name = $request->input('market_name');
-      $memberinfo->shop_name = $request->input('shop_name');
-      $memberinfo->customer_name = $request->input('customer_name');
+      $memberinfo->name = $request->input('name');
+      $memberinfo->club_name = $request->input('club_name');
+      $memberinfo->member_id = $request->input('member_id');
+      $memberinfo->gender = $request->input('gender');
+      $memberinfo->area = $request->input('area');
       $memberinfo->phone = $request->input('phone');
-      $memberinfo->product_sku = $request->input('product_sku');
-      $memberinfo->total_consume_amount = $request->input('total_consume_amount');
+      $memberinfo->email = $request->input('email');
+      $memberinfo->mocha = $request->input('mocha');
+      $memberinfo->mocha_rating = $request->input('mocha_rating');
+      $memberinfo->natural_vanilla = $request->input('natural_vanilla');
+      $memberinfo->vanilla_rating = $request->input('vanilla_rating');
+      $memberinfo->mint_chocolate = $request->input('mint_chocolate');
+      $memberinfo->mint_rating = $request->input('mint_rating');
       $memberinfo->save();
-      
       return redirect('admin/display_member_info')->with('message', 'for your feedback.');
     }
     public function display_member_info(){
@@ -62,13 +67,19 @@ class AdminController extends Controller
       $memberinfo = MemberInfo::find($id);
 
       
-      $memberinfo->district_name = $request->input('district_name');
-      $memberinfo->market_name = $request->input('market_name');
-      $memberinfo->shop_name = $request->input('shop_name');
-      $memberinfo->customer_name = $request->input('customer_name');
+      $memberinfo->name = $request->input('name');
+      $memberinfo->club_name = $request->input('club_name');
+      $memberinfo->member_id = $request->input('member_id');
+      $memberinfo->gender = $request->input('gender');
+      $memberinfo->area = $request->input('area');
       $memberinfo->phone = $request->input('phone');
-      $memberinfo->product_sku = $request->input('product_sku');
-      $memberinfo->total_consume_amount = $request->input('total_consume_amount');
+      $memberinfo->email = $request->input('email');
+      $memberinfo->mocha = $request->input('mocha');
+      $memberinfo->mocha_rating = $request->input('mocha_rating');
+      $memberinfo->natural_vanilla = $request->input('natural_vanilla');
+      $memberinfo->vanilla_rating = $request->input('vanilla_rating');
+      $memberinfo->mint_chocolate = $request->input('mint_chocolate');
+      $memberinfo->mint_rating = $request->input('mint_rating');
       $memberinfo->save();
       return redirect('admin/display_member_info');
     }
@@ -111,9 +122,7 @@ class AdminController extends Controller
     public function save_area(Request $request)
     {
       $area = new Area();
-      $area->district_name = $request->input('district_name');
-      $area->market_name = $request->input('market_name');
-      $area->shop_name = $request->input('shop_name');
+      $area->area = $request->input('area');
       $area->save();
       return redirect('admin/displayArea');
     }

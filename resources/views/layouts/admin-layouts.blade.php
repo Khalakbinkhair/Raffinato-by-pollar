@@ -51,7 +51,7 @@
       <div class="image">
         <center>
           <a href="{{URL::to('/admin/dashboard')}}" class="brand-link text-center">
-            <img src=" {{asset('frontend/image/logo/Eva-logo.png')}}"  class="img-fluid">
+            <img src=" {{asset('frontend/image/logo/rafinato-logo.png')}}" class="img-fluid">
           </a>
         </center>
       </div>
